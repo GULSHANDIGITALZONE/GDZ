@@ -1,0 +1,262 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  } */
+    h3{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+h4{
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    
+    align-items: self-end;
+    /* height: 100vh; */
+}
+.container {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.container1{
+    /* width: 300px;
+    padding: 20px; */
+    background: white;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* float: right; */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.ABC {
+    width: 100%;
+    padding: 10px;
+    background-color: #16bb55;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.ABC1 {
+    /* width: 100%; */
+    /* padding: 10px; */
+    background-color: #0022e0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
+}
+.ABC:hover {
+    background-color: #45a049;
+}
+.ABC1:hover {
+    background-color: #ff0000;
+}
+iframe {
+    border: 1px solid black;
+    width: 49%; /* takes precedence over the width set with the HTML width attribute */
+    height: 400px;
+}
+.fruit {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    size: 50px;
+    grid-gap: 20px;
+
+    /* background-color: aqua; */
+    /* grid-gap: 10px; */
+
+}
+.item1 {
+    /* border: solid red;
+    background-color: rgb(255, 208, 0); */
+
+    /* grid-row-start: 1; 
+    grid-row-end: 3; or */
+    grid-row: 1/2;
+}
+.item2 {
+    /* border: solid red;
+    background-color: rgb(255, 208, 0); */
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+.item3{
+    /* border: solid red;
+    background-color: rgb(255, 208, 0); */
+    grid-row: 3/4;
+    /* order: 5; */
+
+}
+.item4 {
+    /* border: solid red;
+    background-color: rgb(255, 208, 0); */
+    grid-row: 1/2;
+
+}
+.item5 {
+    /* border: solid red;
+    background-color: rgb(255, 208, 0); */
+    grid-row: 2/3;
+    justify-self: start;
+
+}
+.item6 {
+    /* border: solid red;
+    background-color: rgb(255, 208, 0); */
+    grid-row: 3/4;
+    align-self: center;
+
+}
+.item7 {
+    /* border: solid red;
+    background-color: rgb(255, 208, 0); */
+    grid-row: 1/2;
+
+}
+
+
+.item9 {
+    /* border: solid red;
+    background-color: rgb(255, 208, 0); */
+    grid-row: 3/4;
+
+}
+.search-box {
+    margin-bottom: 20px;
+}
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+}
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.highlight {
+    background-color: yellow;
+}
+
+span {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: start;
+    height: 100vh;
+    /* background-color: #ff0000; */
+    } 
+    .chat-container {
+    width: 400px;
+    height: 500px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    }
+    .chat-header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    }
+    .chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    }
+    .message {
+    margin: 5px 0;
+    }
+    .user-message {
+    text-align: right;
+    color: #4CAF50;
+    }
+    .bot-message {
+    text-align: left;
+    color: #333;
+    }
+    .chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    }
+    .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    }
+    .chat-input button {
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    .chat-input button:hover {
+    background: #45a049;
+    }
+    .bot{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+
+    }
+    .bot-logo{
+        float: right;
+        margin-right: 5%;
+        margin-top: 35%;
+
+    }

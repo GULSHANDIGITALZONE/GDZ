@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- <link rel="stylesheet" href="./chatbot.js"> -->
+     <link rel="stylesheet" href="./style.css">
+     <!-- <link rel="stylesheet" href="./login.js"> -->
+     <link rel="shortcut icon" href="./GDZ.png" type="image/x-icon">
+
+    <title>कुछ भी सीखों</title>
+   
+</head>
+<body style="background-color: #8dcea6;">
+    <div class="bot-container" id="on-container">
+        <a href="#"><img class="bot-logo" type="button" style="position: fixed; width: 80px; height: 80px;" onclick="loginbot()" src="./chatbot.png" alt=""></a>
+        
+    </div>
+    
+    <div class="bot-container" id="off-container" style="display: none; position: fixed;">
+        
+        
+            <div class="chat-container">
+                <div class="chat-header">
+                    <button  text-align: right; type="button" onclick="logoutbot()"><h4 style="color: red;">Close Chatbot</h4></button>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                  <!-- Messages will appear here -->
+                </div>
+                
+                <div class="chat-input">
+                    
+                  <input type="text" id="user-input" placeholder="सिर्फ विषय लिखे(Ex.E-shram,College).....">
+                  <button onclick="sendMessage()">Send</button>
+                </div>
+              </div>
+        
+    </div>
+
+    <img style="width: 100px; height: 100px; position: fixed;" src="./GDZ.png" alt="">
+    <h1 style="text-align: center; color: rgb(17, 0, 255);"><b>❤️Welcome to GDZ❤️ <a href="tel:+6299050695"><i class="fa-solid fa-phone-volume"></i></a> <a href="mailto:gulshandigitalzone@gmail.com"><i class="fa-solid fa-envelope"></i></a></b></h1>
+    <h3>
+    <div class="container" id="login-container">
+
+        <h2><img src="./LOCK.jpeg" alt=""></h2>
+        <form id="login-form">
+            
+            <div class="form-group">
+                <label  for="username">Username <i style="color: green;"><a href="https://gulshandigitalzone.github.io/payment/" target="_blank" rel="noopener noreferrer">Get Id & Password</a></i></label>
+                
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button class="ABC" type="button" onclick="login()">Login</button>
+            <marquee style="color: red;" behavior="" direction="">29/11/2024 को सुबह 9AM से 4PM तक Servr down रहेगा।</marquee>
+            
+            
+            
+        </form>
+    </div>
+    
+</h3>
+
+
+    <div class="container1" id="logout-container" style="display: none";>
+        <button  class="ABC1"  text-align: right; type="button" onclick="logout()">Hello User<br>Logout</button>
+        <h1 style="text-align: center;"><b>आप कोई भी विडियो या Portal देख सकते हैं।</b></h1>
+
+        
+    
+        <div id="content">
+            HTML is the standard markup language for creating web pages. It stands for Hyper Text Markup Language.
+            With HTML, you can create your own website. It's easy to learn and widely used.
+            HTML elements are represented by tags, and they structure the content on your page.
+        </div>
+    
+        <script>
+            function searchText() {
+                // Clear previous highlights
+                const contentDiv = document.getElementById('content');
+                contentDiv.innerHTML = contentDiv.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+    
+                // Get search input value
+                const input = document.getElementById('searchInput').value.trim();
+                if (input === "") return;
+    
+                // Highlight matching text
+                const regex = new RegExp(input, 'gi');
+                contentDiv.innerHTML = contentDiv.innerHTML.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+            }
+        </script>
+        <br>
+        <h1 style="background-color: #45a049;">1.👉 E-shram कार्ड कैसे बनायें।</h1> <br>
+        <iframe id="inlineFrameExample" title="Inline Frame Example" src="https://eshram.gov.in/indexmain"></iframe>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TRh347D8t4E?si=y72ETQEUel3Yetee" 
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+            <br>
+            <h1 style=" background-color: #45a049;">2.👉R.D COLLEGE पोर्टल का युज कैसे करें।</h1>
+            <br>
+            <iframe id="inlineFrameExample" title="Inline Frame Example" src="https://rdcollege.ac.in/web/"></iframe>
+            <!-- <video controls width="49%" height="400px" style="border: 1px solid black;">
+            <source src="./video.mp4" type="video/mp4"/>
+            </video>
+            <br> -->
+            <h1 style=" background-color: #45a049;">3.👉 बिहार बीज पोर्टल का युज कैसे करें।</h1>
+            <iframe id="inlineFrameExample" title="Inline Frame Example" src="https://brbn.bihar.gov.in/Home/Demand"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lijYd8vhCH0?si=fSw-ZmCom2OwrYcQ" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <h1 style=" background-color: #45a049;">4.👉 Motivation</h1>
+             <video width="640" height="360" controls>
+                 <source src="./bhakti gulshan.mp4" type="video/mp4">    
+             </video>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/VOYt1OVuPNo?si=jdkNOzRXoTtXvoKc" 
+             title="YouTube video player" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <br>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/8gbAimkp6EM?si=fqaGpNgMDjNbFqCC"
+              title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+             <br>
+            <h1 style=" background-color: #45a049;">5.👉 रा: धा स्‍व आ मी सतसंग</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nkeNvMxw1L0?si=Mz8azyMEt184ufK6" 
+            title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mk2hGZXzBq0?si=ZE80LZpqDQzjDdXj" 
+            title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <br>
+           
+            <h1 style="color: #abf00a; text-align: center; background-color: #ff0000;">Any help</h1>
+           
+<br>
+
+
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "user" && password === "password"
+             || username === "user1" && password === "password"
+             || username === "user2" && password === "password"
+             || username === "user3" && password === "password"
+             || username === "user4" && password === "password4") {
+                // alert("Login successful!");
+                document.getElementById("login-container").style.display = "none";
+                document.getElementById("logout-container").style.display = "block";
+            } else {
+                alert("Invalid username or password!");
+            }
+        }
+
+        function logout() {
+            alert("Logged out!");
+            document.getElementById("login-container").style.display = "block";
+            document.getElementById("logout-container").style.display = "none";
+        }
+    </script>
+    <script>
+        function loginbot() {
+                document.getElementById("on-container").style.display = "none";
+                document.getElementById("off-container").style.display = "block";
+        }
+    
+        function logoutbot() {
+            alert("closed Chatbot");
+            document.getElementById("on-container").style.display = "block";
+            document.getElementById("off-container").style.display = "none";
+        }
+    </script>
+     <h1>
+       
+      
+        <script>
+          function sendMessage() {
+            const userInput = document.getElementById('user-input');
+            const messages = document.getElementById('chat-messages');
+      
+            // Display user's message
+            const userMessage = document.createElement('div');
+            userMessage.className = 'message user-message';
+            userMessage.textContent = userInput.value;
+            messages.appendChild(userMessage);
+      
+            // Generate bot's response
+            const botMessage = document.createElement('div');
+            botMessage.className = 'message bot-message';
+            botMessage.textContent = getBotResponse(userInput.value);
+            messages.appendChild(botMessage);
+      
+            // Clear input and scroll to the bottom
+            userInput.value = '';
+            messages.scrollTop = messages.scrollHeight;
+          }
+      
+          function getBotResponse(input) {
+            // Simple response logic
+            if (input.toLowerCase().includes('hello')) {
+              return 'Hello! How can I help you?';
+            }
+            else if (input.toLowerCase().includes('good morning')) {
+                return 'Good morning';
+            }
+            else if (input.toLowerCase().includes('good evening')) {
+                return 'Good evening';
+            }
+            else if (input.toLowerCase().includes('good afternoon')) {
+                return 'Good afternoon';
+            }
+             else if (input.toLowerCase().includes('hi')) {
+                return 'Hi! How can I help you?';
+            } else if (input.toLowerCase().includes('how are you')) {
+              return 'I am virtual assistant of GDZ';
+            }else if (input.toLowerCase().includes('e-shram')) {
+                return 'video>>>> No.1 par jaye';
+            }
+            else if (input.toLowerCase().includes('register')) {
+                return 'Get ID & Password, par click kre';
+            }
+            else if (input.toLowerCase().includes('help')) {
+                return 'How can we halp you? Please type or Call:-6299050695 ,Email:-gulshandigitalzone@gmail.com ';
+            }
+            else if (input.toLowerCase().includes('e-shram')) {
+                return 'video>>>> No.1 par jaye';
+            }
+            else if (input.toLowerCase().includes('college')) {
+                return 'video>>>> No.2 par jaye';
+            }
+            else if (input.toLowerCase().includes('beej')) {
+                return 'video>>>> No.3 par jaye';
+            }
+          
+            else if (input.toLowerCase().includes('motivation')) {
+                return 'video>>>> No.4 par jaye';
+            }
+            else if (input.toLowerCase().includes('satsang')) {
+                return 'video>>>> No.5 par jaye';
+            }
+            else if (input.toLowerCase().includes(' ')) {
+                return 'Please Type';
+            }
+            
+            
+            
+            
+            
+            else {
+              return 'Sorry, it is not available or I do not understand, Please give me feedback by email,';
+            }
+          }
+        </script>
+        </h1>
+       
+        <footer>
+        
+            <h1>
+                <div class="fruit" >
+                    <div class="item6">College</div>
+                    <div class="item2"><a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i>youtube</a></div>
+                    <div class="item3">GDZ Lab</div>
+                    <div class="item4"><a href="mailto:gulshankumardariyapur85885@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a></div>
+                    <div class="item5">Company</div>
+                    <div class="item1"><a href="tel:+6299050695"><i class="fa-sharp fa-solid fa-phone-volume"></i> <i class="fa-brands fa-whatsapp"></i>Call or What's app</a>
+                    </div>
+                    <div class="item7"><a href="https://www.google.com/maps/place/GULSHAN+DIGITAL+ZONE/@25.1608555,85.9283995,21z/data=!4m6!3m5!1s0x39f241d4005bf849:0xc81c1bd024015bb8!8m2!3d25.160834!4d85.928542!16s%2Fg%2F11w48v47kf?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot"></i>Location</a></div>
+                    <div class="item8">About</div>
+                    <div class="item9">privacy-policy</div>
+                    <!-- <div class="item10">lemon</div> -->
+            
+            
+                </div>
+            </h1>
+            
+            </footer>
+            <h5 style="text-align: center;">&copy; 2024 GULSHAN DIGITAL ZONE   Devloped By:- RS GULSHAN PRAJAPATI</h5>
+</body>
+</html>
