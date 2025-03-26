@@ -1,23 +1,55 @@
 // main LOgin aaur Logout ke liye .............................................
+// Login aur Logout ka Fix kiya gaya script
+
+// Login Function
 function login() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
+    
+    const validUsers = {
+        "user": "password",
+        "user1": "password",
+        "user2": "password",
+        "user3": "password",
+        "GDZ": "Free",
+        "user4": "password4"
+    };
 
-    if (username === "user" && password === "password"
-     || username === "user1" && password === "password"
-     || username === "user2" && password === "password"
-     || username === "user3" && password === "password"
-     || username === "GDZ" && password === "Free"
-     || username === "user4" && password === "password4") {
+    if (validUsers[username] && validUsers[username] === password) {
         showMessage("Successfully Login ✔️", "green");
         document.getElementById("login-container").style.display = "none";
         document.getElementById("logout-container").style.display = "block";
+        
+        // Login time store karo for auto logout
+        localStorage.setItem("loginTime", Date.now());
+        localStorage.setItem("isLoggedIn", "true");
     } else {
         showMessage("Invalid username or password! ❌", "red");
     }
 }
 
+// Auto Logout after 24 hours
+function checkAutoLogout() {
+    let loginTime = localStorage.getItem("loginTime");
+    if (loginTime) {
+        let currentTime = Date.now();
+        let hoursPassed = (currentTime - loginTime) / (1000 * 60 * 60);
+
+        if (hoursPassed >= 24) {
+            logout();
+        }
+    }
+}
+
+// Logout Function
 function logout() {
+    localStorage.removeItem("loginTime");
+    localStorage.removeItem("isLoggedIn");
+    alert("आपका सेशन समाप्त हो गया है, कृपया फिर से लॉगिन करें।");
+    document.getElementById("login-container").style.display = "block";
+    document.getElementById("logout-container").style.display = "none";
+}
+function logout1() {
     const confirmation = confirm("Are you sure you want to logout?");
     if (confirmation) {
         showMessage("Successfully LogOut,Thanku.", "gold");
@@ -28,6 +60,16 @@ function logout() {
     }
 }
 
+// Page Load par Auto Logout Check
+window.onload = function () {
+    checkAutoLogout();
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("logout-container").style.display = "block";
+    }
+};
+
+// Show Message Function
 function showMessage(message, color) {
     const messageDiv = document.createElement("div");
     messageDiv.textContent = message;
@@ -44,11 +86,46 @@ function showMessage(message, color) {
     messageDiv.style.fontSize = "50px";
     messageDiv.style.zIndex = "1000";
     document.body.appendChild(messageDiv);
-
+    
     setTimeout(() => {
         messageDiv.remove();
-    }, 2000); // Message will disappear after 2 seconds
+    }, 2000);
 }
+
+//खुद से लाॅगआउट से बचाने के लिए .....................................
+// यूज़र के लॉगिन टाइम को सेट करें
+// function login() {
+//     localStorage.setItem("loginTime", Date.now()); // करंट टाइम स्टोर करो
+//     localStorage.setItem("isLoggedIn", "true"); // लॉगिन स्टेट सेट करो
+//     window.location.reload(); // पेज रीलोड करो
+// }
+
+// // 24 घंटे बाद ऑटो-लॉगआउट सेट करें
+// function checkAutoLogout() {
+//     let loginTime = localStorage.getItem("loginTime");
+//     if (loginTime) {
+//         let currentTime = Date.now();
+//         let hoursPassed = (currentTime - loginTime) / (1000 * 60 * 60); // मिलिसेकंड से घंटे में कन्वर्ट
+
+//         if (hoursPassed >= 24) {
+//             logout();
+//         }
+//     }
+// }
+
+// // लॉगआउट फंक्शन
+// function logout() {
+//     localStorage.removeItem("loginTime"); // टाइम डिलीट करो
+//     localStorage.removeItem("isLoggedIn"); // स्टेट डिलीट करो
+//     alert("आपका सेशन समाप्त हो गया है, कृपया फिर से लॉगिन करें।");
+//     window.location.reload();
+// }
+
+// // पेज लोड होने पर ऑटो-लॉगआउट चेक करें
+// window.onload = function () {
+//     checkAutoLogout();
+// };
+
 //payment ke liye........................................................................................
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -249,7 +326,7 @@ function searchText() {
 
 //   <!-- //Any suggestion or comment or feedback............................................................................... -->
   
-   document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+   document.getElementById('feedbackForm').addEventListener('feedbacksubmit', function (e) {
        e.preventDefault(); // Prevent default form submission
 
        // Get input value
