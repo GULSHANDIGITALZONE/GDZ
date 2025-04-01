@@ -326,7 +326,7 @@ function searchText() {
 
 //   <!-- //Any suggestion or comment or feedback............................................................................... -->
   
-   document.getElementById('feedbackForm').addEventListener('feedbacksubmit', function (e) {
+   document.getElementById('feedbackForm').addEventListener('submit', function (e) {
        e.preventDefault(); // Prevent default form submission
 
        // Get input value
