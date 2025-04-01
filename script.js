@@ -303,7 +303,7 @@ function searchText() {
       e.preventDefault(); // Prevent default form submission
 
       // Get input value
-      const inputValue = document.getElementById('inputField').value;
+      const inputValue = document.getElementById('Subscribe.Id').value;
 
       // Google Form action URL and field name (entry ID)
       const googleFormURL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdqVwXLPzFj1Tl2ZQVxpJN8TLWTtkX0XMFOtZBZgeCxfGJDug/formResponse"; // Replace with your form's action URL
