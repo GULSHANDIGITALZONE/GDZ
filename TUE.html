@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- <link rel="stylesheet" href="./chatbot.js"> -->
+     <link rel="stylesheet" href="./style.css">
+     <!-- <link rel="stylesheet" href="./login.js"> -->
+     <link rel="shortcut icon" href="./GDZ.png" type="image/x-icon">
+     <style>
+ 
+     </style>
+
+    <title>कुछ भी सीखों</title>
+   
+</head>
+<body style="background-color: #faf4a0;">
+    <!-- //chatbot ke liye................................................................. -->
+     
+    <div class="bot-container" id="on-container">
+        <a href="#"><img class="bot-logo" type="button" style="position: fixed; width: 80px; height: 80px;" onclick="loginbot()" src="./chatbot.png" alt=""></a>
+    </div>
+    <div class="bot-container" id="off-container" style="display: none; position: fixed;">
+        
+        
+            <div class="chat-container">
+                <div class="chat-header">
+                    <button  text-align: right; type="button" onclick="logoutbot()"><h4 style="color: red;">Close Chatbot</h4></button>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                  <!-- Messages will appear here -->
+                </div>
+                
+                <div class="chat-input">
+                    
+                  <input type="text" id="user-input" placeholder="सिर्फ विषय लिखे(Ex.E-shram,College).....">
+                  <button onclick="sendMessage()">Send</button>
+                </div>
+              </div>
+        
+    </div>
+
+    <img style="width: 100px; height: 100px; position: fixed;" src="./GDZ.png" alt="">
+    <h1 style="text-align: center; color: rgb(17, 0, 255);"><b>❤️Welcome to GDZ❤️ <a href="tel:+6299050695">Call: 6299050695</a> <a href="mailto:gulshandigitalzone@gmail.com"><i class="fa-solid fa-envelope"></i></a></b></h1>
+    <h3>
+    <div class="container" id="login-container">
+
+<marquee behavior="" direction=""> <h4 style="text-align: center; color: rgb(247, 0, 255);">For Try👉 User = <b style="color: blue;"> GDZ</b> , Password = <b style="color: blue;">Free</b> लिखें।<br></h2>
+</marquee>
+        <h2><img style="width: 150; height: 150px;" src="./LOCK.jpeg" alt=""></h2>
+        <form id="login-form">
+            
+            <div class="form-group">
+                <label  for="username">Username <i style="color: green;"><a style="color: gold; "href="#" onclick="payments()">VIP user बने। (click)</a></i></label>
+                
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button class="ABC" type="button" onclick="login()">Login</button>
+            <marquee style="color: red;" behavior="" direction="">Laptop या फोन मे Desktop Mod मे ठीक से दिखाई देगा! Because Server is down!</marquee>
+            
+            
+            
+        </form>
+    </div>
+    
+    
+</h3>
+
+    <div class="container1" id="logout-container" style="display: none";>
+        <button  class="ABC1"  text-align: right; type="button" onclick="logout()" onclick="logout1()">Hello User<br>Logout</button>
+        <!-- <button  class="ABC1"  text-align: right; type="button" ></button> -->
+
+        <h1 style="text-align: center;"><b>आप कोई भी विडियो या Portal देख सकते हैं।</b></h1>
+        <!-- search bar ke liye................................................ -->
+        <div class="search-bar" style="text-align: center; margin-top: 20px;">
+            <input type="text" id="searchInput" placeholder="Search... 👉 खेलो कूदो नाचो गाओ जश्न मनाओ फिर फिर आओ... 🙏🏻🙏🏻🙏🏻🙏🏻" style="padding: 10px; width: 80%;">
+            <button onclick="searchText()" style="padding: 10px;">Search</button>
+        </div>
+    
+        <div class="content">
+       <h1 style="color: red;">Search bar Not available in Tryal version. <a style="color: gold;" href="#" onclick="payments()">Get VIP ID (click)</a></h1>
+          
+       
+    
+        <section style="background-color: rgb(0, 225, 255);  border-width: 10px; border-color: rgb(255, 18, 18); border-style: solid;">
+            <div>
+                <h1 style="color: red; background-color: rgb(70, 247, 0);"><b>LATEST JOB</b></h1>
+                <h2>
+                    <li><a target="_blank"  href="https://cetcell.mahacet.org/">MAH CET Portal</a></li>
+                     <li><a target="_blank"  href="https://www.bookswagon.com/book/arihant-maharashtra-mca-cet-prep/9789358892895?gad_source=4&gad_campaignid=23056568600&gbraid=0AAAAAoKv850bwRKp6PVk283BJQioqvHF0&gclid=CjwKCAjw04HIBhB8EiwA8jGNbVX1NRtVcrWk84iIN95hMvTI54zXXixoCpAVrYR4-QjlgCw542JfYBoCOscQAvD_BwE#aboutbook">MAH Progression Book</a></li>
+                     <li><a target="_blank"  href="https://onlinebhg.bihar.gov.in/login.aspx">Bihar Home Guard</a></li>
+                     <li><a target="_blank"  href="https://www.sarkariresult.com/force/cisf-constable-tradesman-mar25/">cisf-constable-tradesman</a></li>
+                    <li><a target="_blank"  href="https://www.sarkariresult.com/force/navy-ssr-mr-inet-2025/">Navy SSR / MR Apply Online</a></li>
+                    <li><a target="_blank"  href="https://apply-csbc.com/CSBC_CT_V1_01_2025/applicationIndex">CSBC Bihar Constable Apply Online</a></li>
+                    <li><a target="_blank"  href="https://www.sarkariresult.com/force/army-agniveer-cee-mar25/">Army Agniveer 2025 Apply Online</a></li>
+                  <li><a target="_blank"  href="https://www.rrbapply.gov.in/#/auth/home">RRB Group-D Apply</a></li>
+                  <li><a target="_blank"  href="https://onlineupdatestm.in/kasturba-gandhi-vidyalaya-recruitment-2025/#google_vignette">कस्तूरबा गाँधी बालिका विद्यालय <br> में नई भर्ती जाने पूरी जानकारी?</a></li>
+                  <li><a target="_blank"  href="https://agnipathvayu.cdac.in/avreg/candidate/login">Indian Air Force Agniveer</a></li>
+                  <li><a target="_blank"  href="https://ssc.gov.in/login">Check Exam City & Date</a></li>
+           <li><a target="_blank"  href="https://onlineupdatestm.in/cbi-office-assistant-vacancy-2025/">सेंट्रल बैंक में आई नई <br> भर्ती 10वी पास के लिए</a></li>
+           <li><a target="_blank"  href="https://cdn3.digialm.com/EForms/configuredHtml/1631/84962/login.html">BIHAR BELTRON ANSWER KEY</a></li>
+           <li><a target="_blank"  href="https://www.sarkariresult.com/force/cisf-constable-driver-feb25/"> CISF Constable or <br> Driver Recruitment 2024</a></li>
+           <li><a target="_blank"  href="#">Try Latest Job</a></li>
+           <li><a target="_blank"  href="#">Try Latest Job</a></li>
+           <li><a target="_blank"  href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+        </h2>
+          <h1 style="color: red; background-color: rgb(70, 247, 0);"><b>Admission</b></h1>
+        <h2>
+           <li><a  target="_blank"  href="https://ofssbihar.net/Higher-Education/index.html">OFSS Inter Admission</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>   
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+           <li><a href="#">Try Latest Job</a></li>
+          
+              </h2>
+            </div>
+            <div>
+                <h1 style="color: red; background-color: rgb(70, 247, 0);"><B>IMPORTANT LINK</B></h1>
+                <h2>
+                 <li><a target="_blank"  href="https://swcs.bihar.gov.in/RtpsReportView/certificate_download.jsp">RTPS Certificate Download</a></li>
+                <li><a target="_blank"  href="https://serviceonline.bihar.gov.in/">Bihar RTPS Service</a></li>
+                 <li><a target="_blank"  href="https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=12050010&UUID=6669e84e-5b07-4f9f-ba89-a33ed9c5e91e&directService=true&tempId=4236&grievDefined=0&serviceLinkRequired=No&userLoggedIn=N&source=CTZN&OWASP_CSRFTOKEN=KSGQ-SVF5-HT9H-CY80-9XTC-GL6V-L56F-WD1P">बिहार आचरण प्रमाण पत्र अप्‍लाई</a></li>
+                <li><a target="_blank"  href="https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=4630008&UUID=932f37ff-2793-4d23-ab59-d707274b0db8&directService=true&tempId=751&grievDefined=0&serviceLinkRequired=No&userLoggedIn=N&source=CTZN&OWASP_CSRFTOKEN=XD2I-NDHD-GK2E-3V92-1XVK-GKYU-PRR9-BJJW">बिहार निवास प्रमााण पत्र अप्‍लाई</a></li>
+                <li><a target="_blank"  href="https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=4650008&UUID=824b1d16-61e2-440d-a016-de54af2ae7e3&directService=true&tempId=748&grievDefined=0&serviceLinkRequired=No&userLoggedIn=N&source=CTZN&OWASP_CSRFTOKEN=PYII-J0BG-8XRL-8DFZ-QXVM-TH9N-8472-7ZJ4">बिहार जाति प्रमााण पत्र अप्‍लाई</a></li>
+                <li><a target="_blank"  href="https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=4640005&UUID=26a33ea9-198b-43fc-86cc-cd87791a9bb4&directService=true&tempId=747&grievDefined=0&serviceLinkRequired=No&userLoggedIn=N&source=CTZN&OWASP_CSRFTOKEN=XF64-IA9K-VD4G-Z74Z-HXFQ-ROMP-GIO9-0EO0">बिहार आय प्रमााण पत्र अप्‍लाई</a></li>
+                <li><a target="_blank"  href="https://medhasoft.bih.nic.in/">Meghasoft</a></li>
+                <li><a target="_blank"  href="https://pmsonline.bih.nic.in/">Post Matric schlorship</a></li>
+                <li><a target="_blank"  href="https://register.eshram.gov.in/#/user/self">फ्री ई-श्रम अप्‍लाई</a></li>
+                <li><a target="_blank"  href="https://electoralsearch.eci.gov.in/">वोटर कार्ड नंवर खोजें</a></li>
+                <li><a target="_blank"  href="https://myaadhaar.uidai.gov.in/">DIRECT AADHAAR LOGIN</a></li>
+                <li><a target="_blank"  target="_blank" href="https://translate.google.com/?sl=en&tl=hi&op=translate">Google Translator</a></li>
+                <li><a target="_blank"  href="https://application.mungeruniversity.ac.in/User/Login">MUNGER UNIVERSITY DIRECT LOGIN</a></li>
+                <li><a  target="_blank" target="_blank" href="https://chatgpt.com/">Chat GPT</a></li>
+                <li><a target="_blank"  href="https://epds.bihar.gov.in/SearchByRCID.aspx">CHECK RATION CARD MEMBER</a></li>
+                <li><a target="_blank"  href="https://dbtagriculture.bihar.gov.in/RegFarmer/">बिहार किसान पंजियन</a></li>
+                <li><a href="https://pmkisan.gov.in/aadharekyc.aspx">PM Kisan Samman Nidhi eKYC</a></li>
+                <li><a href="https://pmvishwakarma.gov.in/">PM vishkarma yojana</a></li>
+                <li><a href="https://beneficiary.nha.gov.in/">आयुष्‍मान कार्ड अप्‍लाई</a></li>
+                <li><a href="https://onlineupdatestm.in/pm-internship-portal/">PM Internship Yojana</a></li>
+                <li><a target="_blank" href="https://epds.bihar.gov.in/">अप्‍लाई राशन कार्ड</a></li>
+                <li><a  target="_blank"  href="https://bihar.s3waas.gov.in/">All District of Bihar</a></li>
+
+                </h2>
+            <h1 style="color: red; background-color: rgb(70, 247, 0);"><B>IMPORTANT TOOLS</B></h1>
+                <h2>
+                <li><a target="_blank" href="#">Try Important Link</a></li>
+                <li>Photo Enhence <a  target="_blank" href="https://www.cutout.pro/photo-enhancer-sharpener-upscaler/upload">Link 1</a> , <a  target="_blank" href="https://picsart.com/ai-image-enhancer/">Link 2</a></li>
+                <li>Photo Background Remover <a  target="_blank"  href="https://www.remove.bg/">Link 1</a> ,  <a  target="_blank"  href="https://picsart.com/background-remover/">Link 2</a>  </li>
+                <li>Photo finder<a  target="_blank"  href="https://pixabay.com/">Link1</a> <a  target="_blank"  href="https://www.pexels.com/">Link2</a></li>
+                <li><a  target="_blank"  href="#">Try Important Link</a></li>
+                <li><a  target="_blank"  href="#">Try Important Link</a></li>
+              </h2>
+            </div>
+            <div>
+               <h1 style="color: red; background-color: rgb(70, 247, 0); "><B>ADMIT CARD or RESULTS</B></h1>
+               <h2 style="margin-bottom: 40px;">
+                     <li><a target="_blank"  href="https://interbiharboard.com/">Bihar Board Class 12th Result</a></li>
+                <li><a target="_blank"  href="https://www.matricresult2025.com/">Bihar Board 10th Result 2025</a></li>
+                <li><a target="_blank"  href="https://upsssc.gov.in/Online_App/AdmitCard.aspx?ID=MAIN">UPSSSC junior assistant 2022</a></li>
+                <li><a target="_blank" href="https://onlinebhg.bihar.gov.in/AdmitCardSearch.aspx">Home Gard</a></li>
+                 <li><a  target="_blank"  href="https://ppu.bihar-ums.com/login">PATLIPUTRA UNIVERSITY ADMIT CARD</a></li>
+                <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                    <li><a  target="_blank"  href="#">Try Admit card</a></li>
+                </li>
+              </h2>
+              <h1 style="color: red; background-color: rgb(70, 247, 0);">IMPORTANT WEBSITE</h1>
+              <h2>
+              <li><a  target="_blank"  href="https://www.sarkariresult.com/">sarkari result</a></li>
+              <li><a  target="_blank"  href="https://onlineupdatestm.in/">Online update stm</a></li>
+              <li><a  target="_blank"  href="https://eazytonet.com/">EasytoNet</a></li>
+              <li><a  target="_blank"  href="https://dshelpingforever.co.in/">DS HELPING FOREVER</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+            </h2>
+                 <h1 style="color: red; background-color: rgb(70, 247, 0);">FOR STUDENTS </h1>
+              <h2>
+              <li><a  target="_blank"  href="https://github.com/GULSHANDIGITALZONE/GDZ">Git Hub</a></li>
+              <li><a  target="_blank"  href="https://app.netlify.com/projects/gdzpayment/overview">NETLIFY</a></li>
+              <li><a  target="_blank"  href="https://www.blogger.com/blog/posts/15267747905955032">BLOGGER.COM</a></li>
+              <li><a  target="_blank"  href="#">FOR STUDENTS</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+              <li><a  target="_blank"  href="#">Try Important website</a></li>
+            </h2>
+            </div>
+        </section>
+    
+    </div>
+        <br>
+        <h1 style="background-color: #45a049;">1.👉 E-shram कार्ड कैसे बनायें।</h1> <br>
+        <iframe id="inlineFrameExample" title="Inline Frame Example" src="https://eshram.gov.in/indexmain"></iframe>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TRh347D8t4E?si=y72ETQEUel3Yetee" 
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+            <br>
+            <h1 style=" background-color: #45a049;">2.👉R.D COLLEGE पोर्टल का युज कैसे करें।</h1>
+            <br>
+            <iframe id="inlineFrameExample" title="Inline Frame Example" src="https://rdcollege.ac.in/web/"></iframe>
+            <!-- <video controls width="49%" height="400px" style="border: 1px solid black;">
+            <source src="./video.mp4" type="video/mp4"/>
+            </video>
+            <br> -->
+            <h1 style=" background-color: #45a049;">3.👉 बिहार बीज पोर्टल का युज कैसे करें।</h1>
+            <iframe id="inlineFrameExample" title="Inline Frame Example" src="https://brbn.bihar.gov.in/Home/Demand"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lijYd8vhCH0?si=fSw-ZmCom2OwrYcQ" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <h1 style=" background-color: #45a049;">4.👉 Motivation</h1>
+             <video width="640" height="360" controls>
+                 <source src="./bhakti gulshan.mp4" type="video/mp4">    
+             </video>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/VOYt1OVuPNo?si=jdkNOzRXoTtXvoKc" 
+             title="YouTube video player" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <br>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/8gbAimkp6EM?si=fqaGpNgMDjNbFqCC"
+              title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+             <br>
+            <h1 style=" background-color: #45a049;">5.👉 रा: धा स्‍व आ मी सतसंग</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nkeNvMxw1L0?si=Mz8azyMEt184ufK6" 
+            title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mk2hGZXzBq0?si=ZE80LZpqDQzjDdXj" 
+            title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <br>
+           
+           
+<br>
+
+
+    </div>
+        
+        <h1 style="color: #abf00a; text-align: center; background-color: #ff0000;">Any help</h1>
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="Cancelpayment()">&times; 
+                    <span class="tooltip">CANCEL</span>
+    
+                </span>
+               
+                <h2 >
+                    <div id="payment-container" type="button" onclick="payment()">
+                        <label>
+                            <button id="actionButton" disabled>
+                                 <input type="checkbox" id="toggleCheckbox" onchange="toggleButton()" />  
+                                 <a href="http://" target="_blank" rel="noopener noreferrer">I agree to the terms and conditions</a>   
+                                  <br><br>
+                                 <br><a style="font-size: x-large; color: green;" href="#">Process to payment</a></button>
+                          </label>
+                        
+                    </div>
+                    
+                    
+                    <div  id="back-container" style="display: none";>
+                        <button  text-align: right;  onclick="back_payment()"><h1><a href="mailto:gulshandigitalzone@gmail.com">Back and send receipt</a></h1></button>
+                        <h2><a href="tel:+6299050695"><i class="fa-solid fa-phone-volume"></i>Call</a> <a href="mailto:gulshandigitalzone@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a></h2>
+                        
+                        
+    <div class="slideshow-container" >
+    
+        <div class="slides fade" >
+            <img style="width: 200px; height: 200px;" src="./49.jpg" >
+        </div>
+    
+        <div class="slides fade">
+            <img style="width: 200px; height: 200px;" src="./99.jpg" >
+        </div>
+    
+        <div class="slides fade">
+            <img style="width: 200px; height: 200px;" src="./499.jpg" >
+        </div>
+    
+        <div class="slides fade">
+            <img style="width: 200px; height: 200px;" src="./customize.jpg" >
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <button class="dot" onclick="currentSlide(1)">49रु / <br>1 महीना के लिए</button> 
+        <button class="dot" onclick="currentSlide(2)">99रु / <br>6 महीना के लिए</button> 
+        <button class="dot" onclick="currentSlide(3)">499रु / <br> 5 वर्ष के लिए</button> 
+        <button class="dot" onclick="currentSlide(4)">अपने हिसाब से <br> न्‍यूनतम 100रु</button>
+    
+    </div>
+    
+                        </h2>
+                <p style="color: red;">कृपया ध्यान दें:</p>
+                <ul style="color: blue;">
+                    <li>सभी भुगतान अग्रिम में किए जाएंगे।</li>
+                    <li>भुगतान के बाद धन वापसी संभव नहीं है।</li>
+                    <li>भुगतान के बाद हमें अपना नाम, नंबर, और मनचाहा उपयोगकर्ता नाम और पासवर्ड भी भेज सकते हैं।</li>
+                    <li>आपके द्वारा दी गई जानकारी पूर्ण और सत्य होनी चाहिए।</li>
+                    <li>किसी भी प्रकार की तकनीकी समस्या के लिए, कृपया हमारी सहायता टीम से संपर्क करें।</li>
+                </ul>
+                <p>इन शर्तों को स्वीकार करने के बाद ही भुगतान प्रक्रिया को पूरा करें।</p>
+              
+            </div>
+        </div>
+        <!-- payment ke liye -->
+     
+    
+     
+
+        <footer>
+          
+       
+            <h1>
+                <div class="fruit" >
+                    <div class="item6"><a href="https://forms.gle/8rKVwfCvcWrBiQQN9">Cyber cafe Releted</a></div>
+                    <div class="item2"><a href="https://youtube.com/@gulshandigitalzone?si=YDIQ_hvKnwjShGRa"><i class="fa-brands fa-youtube"></i>youtube</a></div>
+                    <div class="item3">
+                        <form id="feedbackForm">
+                        <input style="background-color: #fbff00;" type="" id="inputField" name="inputField" placeholder="Any suggestion or feedback" required>
+                        <button type="submit">Send</button>
+                    </form></div>
+                    <div class="item4"><a href="mailto:gulshankumardariyapur85885@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a></div>
+                    <div class="item5"> 
+                        <form id="customForm">
+                        <input style="background-color: #fbff00;" type="email" id="Subscribe.Id" name="inputField" placeholder="Enter email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                    <div class="item1"><a href="tel:+6299050695"><i class="fa-sharp fa-solid fa-phone-volume"></i> <i class="fa-brands fa-whatsapp"></i>Call or What's app</a>
+                    </div>
+                    <div class="item7"><a href="https://www.google.com/maps/place/GULSHAN+DIGITAL+ZONE/@25.1608555,85.9283995,21z/data=!4m6!3m5!1s0x39f241d4005bf849:0xc81c1bd024015bb8!8m2!3d25.160834!4d85.928542!16s%2Fg%2F11w48v47kf?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot"></i>Location</a></div>
+                    <div class="item8"><a href="#" onclick="showAbout()">About</a></div>
+                    <div class="item9"><a href="#" onclick="showAbout()">privacy-policy</a></div>
+                </div>
+            </h1>
+            <div id="aboutModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeAbout()">&times; </span>
+                    <h1 style="text-align: center;">About Us</h1>
+                    <p>यह वेवसाट RS GULSHAN PRAJAPATI JI के द्वारा बनाया गया है । यह वेवसाइट सरकारी तो नही है लेकिन मानवता को देखते हुए बनाया गया है <br> 
+                        इस वेवसाइट का उद्देश्य लोगों को विभिन्न सरकारी सेवाओं और सूचनाओं तक आसान पहुंच प्रदान करना है।
+                         हम विभिन्न प्रकार की सेवाएं और जानकारी प्रदान करते हैं, जैसे कि नौकरी के आवेदन, महत्वपूर्ण लिंक, एडमिट कार्ड,
+                         और अन्य महत्वपूर्ण वेबसाइटों के लिंक। हमारा लक्ष्य है कि हम लोगों की मदद करें और उन्हें सही जानकारी और सेवाएं प्रदान करें। <a href="tel:+916299050695">Call: +916299050695</a>
+                         <a href="mailto:gulshandigitalzonq@gmail.com">Email: gulshandigitalzone@gmail.com</a>
+                     </p>                    
+                    <h1 style="text-align: center;">Privacy Policy</h1>
+                    <p>यह वेबसाइट किसी प्रकार का धोखा नहीं करती है। वेबसाइट की पहचान हमारे लोगो, कॉल, या ईमेल से पुष्टि करने के बाद ही भुगतान करें। 
+                        बिना जांचे भुगतान करने पर आपकी जिम्मेदारी होगी। हालांकि, नकली वेबसाइट होने पर आप मुझे कॉल या ईमेल कर सकते हैं।<br>
+                     हम आपकी गोपनीयता का सम्मान करते हैं और आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए प्रतिबद्ध हैं। 
+                    हम आपकी जानकारी को किसी भी तीसरे पक्ष के साथ साझा नहीं करते हैं, सिवाय जब यह कानूनी रूप से आवश्यक हो। 
+                    हम आपकी जानकारी का उपयोग केवल आपके अनुभव को बेहतर बनाने और आपको बेहतर सेवाएं प्रदान करने के लिए करते हैं। 
+                    <br> कृपया ध्यान दें कि हमारी वेबसाइट का उपयोग करते समय, आप हमारी गोपनीयता नीति से सहमत होते हैं। 
+                    यदि आपके पास कोई प्रश्न या चिंताएं हैं, तो कृपया हमसे संपर्क करें।</p>
+
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </footer>
+          
+             
+            <br><br>
+            <h6 style="background-color: rgb(0, 0, 0);">.</h6>
+             
+            <h5 style="text-align: center;">&copy; 2024 GULSHAN DIGITAL ZONE   Devloped By:- RS GULSHAN PRAJAPATI</h5>
+</body>
+</html>
